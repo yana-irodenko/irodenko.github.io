@@ -211,7 +211,6 @@ h4 {
 
 ul,
 ol {
-
     font-size: 18px;
     color: #e1a44f;
     padding: 0px 10px 10px 50px;
@@ -225,11 +224,13 @@ h4 {
     padding-top: 130px;
     color: #e1a44f;
     padding-left: 150px;
+    grid-area: h4;
 }
 
 ol {
     padding-bottom: 50px;
     padding-left: 150px;
+    grid-area: 0l;
 }
 
 #works {
@@ -260,60 +261,6 @@ img {
     margin-top: 5px;
 }
 
-
-
-.refe {
-    display: grid;
-    grid-template-columns: repeat(4; fr);
-    grid-template-rows: 1fr;
-    margin-left: 2%;
-    margin-right: 3%;
-    grid-area: ref;
-    place-items: end;
-    grid-template-areas:
-        "insta face yt tw ln";
-}
-
-.ref img:nth-child(1) {
-    display: block;
-    margin: 0;
-    padding: 0;
-    grid-area: insta;
-    max-height: 50px;
-    max-width: 90%;
-}
-
-.ref img:nth-child(2) {
-    display: block;
-    margin: 0;
-    grid-area: face;
-    max-height: 50px;
-    max-width: 90%;
-}
-
-.ref img:nth-child(3) {
-    display: block;
-    margin: 0;
-    grid-area: yt;
-    max-height: 50px;
-    max-width: 90%;
-}
-
-.ref img:nth-child(4) {
-    display: block;
-    margin: 0;
-    grid-area: tw;
-    max-height: 50px;
-    max-width: 90%;
-}
-
-.ref img:nth-child(5) {
-    display: block;
-    margin: 0;
-    grid-area: ln;
-    max-height: 50px;
-    max-width: 90%;
-}
 
 
 
@@ -379,9 +326,6 @@ img {
     background-color: #0a1517;
 }
 
-#works {
-    background-color: #152f2f;
-}
 
 #desire p {
     text-align: center;
@@ -416,16 +360,18 @@ iframe {
 
 
 
-.portfolio {
+#works {
     display: grid;
-    grid-template-columns: repeat (7, fr);
+    grid-template-columns: repeat (3, 1fr);
 
     align-items: center;
     grid-template-areas:
-        " gallery gallery gallery gallery gallery gallery gallery"
-        " gallery gallery gallery gallery gallery gallery gallery"
-        " gallery gallery gallery gallery gallery gallery gallery"
-        " . ref ref ref ref ref ref";
+        "h4 h4 h4 "
+        "ol ol ol"
+        "gallery gallery gallery"
+        "gallery gallery gallery"
+        " gallery gallery gallery"
+        ". . ref ";
 }
 
 
@@ -465,27 +411,75 @@ iframe {
     transform: translate(-50%, -50%);
 }
 
+#works {
+    background-color: #152f2f;
+}
+
 .gallery {
     grid-area: gallery;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     grid-gap: 100px;
     align-items: center;
-    max-height: 100%;
-    max-width: 100%;
-}
-
-.wrap {
     max-width: 100%;
     margin: auto;
     margin-top: 3%;
-    margin-left: 16%;
     margin-bottom: 3%;
-
 }
+
 
 .lg-sub-html,
 #lg-counter {
     color: white;
     font-size: 26px;
+}
+
+.refe {
+    display: flex;
+    flex-flow: row nowrap;
+    align-content: center;
+    grid-area: ref;
+}
+
+.ref {
+
+    margin-left: 2%;
+    margin-right: 3%;
+
+}
+
+.ref img:nth-child(1) {
+    display: block;
+    margin: 0;
+    padding: 0;
+    max-height: 50px;
+    max-width: 90%;
+}
+
+.ref img:nth-child(2) {
+    display: block;
+    margin: 0;
+    max-height: 50px;
+    max-width: 90%;
+}
+
+.ref img:nth-child(3) {
+    display: block;
+    margin: 0;
+    max-height: 50px;
+    max-width: 90%;
+}
+
+.ref img:nth-child(4) {
+    display: block;
+    margin: 0;
+    max-height: 50px;
+    max-width: 90%;
+}
+
+.ref img:nth-child(5) {
+    display: block;
+    margin: 0;
+    max-height: 50px;
+    max-width: 90%;
 }
