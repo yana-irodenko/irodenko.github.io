@@ -223,13 +223,13 @@ h4 {
     margin-top: 0px;
     padding-top: 130px;
     color: #e1a44f;
-    padding-left: 150px;
+    padding-left: 230px;
     grid-area: h4;
 }
 
 ol {
     padding-bottom: 50px;
-    padding-left: 150px;
+    padding-left: 230px;
     grid-area: 0l;
 }
 
@@ -243,8 +243,7 @@ h4 > a {
     background: #324b45;
 }
 
-a:hover,
-h1:hover {
+a:hover {
     background: #475c3d;
 }
 
@@ -288,7 +287,7 @@ img {
     grid-area: note;
     display: block;
     padding-top: 5%;
-    padding-left: 10%;
+    padding-left: 20%;
     padding-right: 20%;
     color: #e1a44f;
 
@@ -363,15 +362,13 @@ iframe {
 #works {
     display: grid;
     grid-template-columns: repeat (3, 1fr);
-
-    align-items: center;
     grid-template-areas:
         "h4 h4 h4 "
         "ol ol ol"
-        "gallery gallery gallery"
-        "gallery gallery gallery"
         " gallery gallery gallery"
-        ". . ref ";
+        " gallery gallery gallery"
+        "  gallery gallery gallery"
+        " . . ref ";
 }
 
 
@@ -437,19 +434,19 @@ iframe {
 .refe {
     display: flex;
     flex-flow: row nowrap;
-    align-content: center;
+    justify-content: space-around;
     grid-area: ref;
+    margin-right: 205px;
 }
 
-.ref {
-    margin-left: 2%;
-    margin-right: 3%;
-}
+
+
 
 .ref img:nth-child(1) {
     display: block;
     margin: 0;
     padding: 0;
+    grid-area: insta;
     max-height: 50px;
     max-width: 90%;
 }
@@ -457,6 +454,7 @@ iframe {
 .ref img:nth-child(2) {
     display: block;
     margin: 0;
+    grid-area: face;
     max-height: 50px;
     max-width: 90%;
 }
@@ -464,6 +462,7 @@ iframe {
 .ref img:nth-child(3) {
     display: block;
     margin: 0;
+    grid-area: yt;
     max-height: 50px;
     max-width: 90%;
 }
@@ -471,6 +470,7 @@ iframe {
 .ref img:nth-child(4) {
     display: block;
     margin: 0;
+    grid-area: tw;
     max-height: 50px;
     max-width: 90%;
 }
@@ -478,6 +478,11 @@ iframe {
 .ref img:nth-child(5) {
     display: block;
     margin: 0;
+    grid-area: ln;
     max-height: 50px;
     max-width: 90%;
+}
+
+.logo1 > a:hover{
+    background-color: transparent;
 }
