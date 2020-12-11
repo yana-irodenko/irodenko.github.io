@@ -83,7 +83,7 @@ a {
     margin-right: auto;
     max-width: 100%;
     z-index: 0;
-    background: url("house-illlustration.jpg") center center cover no-repeat fixed no-repeat;
+    background: url("house-illlustration.jpg") center center cover no-repeat fixed;
 }
 
 #logo {
