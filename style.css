@@ -83,6 +83,7 @@ a {
     margin-right: auto;
     max-width: 100%;
     z-index: 0;
+    background-image: url("house-illlustration.jpg")
 }
 
 #logo {
@@ -223,13 +224,13 @@ h4 {
     margin-top: 0px;
     padding-top: 130px;
     color: #e1a44f;
-    padding-left: 230px;
+    padding-left: 400px;
     grid-area: h4;
 }
 
 ol {
     padding-bottom: 50px;
-    padding-left: 230px;
+    padding-left: 400px;
     grid-area: 0l;
 }
 
@@ -436,7 +437,8 @@ iframe {
     flex-flow: row nowrap;
     justify-content: space-around;
     grid-area: ref;
-    margin-right: 205px;
+    margin-top: 20px;
+    margin-right: 120px;
 }
 
 
