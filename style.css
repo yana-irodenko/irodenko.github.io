@@ -83,7 +83,13 @@ a {
     margin-right: auto;
     max-width: 100%;
     z-index: 0;
-    background-image: url("house-illlustration.jpg")
+    background-image: url("house-illlustration.jpg");
+    background-position: center;
+    /* Center the image */
+    background-repeat: no-repeat;
+    /* Do not repeat the image */
+    background-size: cover;
+    /* Resize the background image to cover the entire container */
 }
 
 #logo {
@@ -287,7 +293,7 @@ img {
 .note {
     grid-area: note;
     display: block;
-    padding-top:7%;
+    padding-top: 7%;
     padding-left: 20%;
     padding-right: 20%;
     color: #e1a44f;
@@ -485,6 +491,6 @@ iframe {
     max-width: 90%;
 }
 
-.logo1 > a:hover{
+.logo1 > a:hover {
     background-color: transparent;
 }
