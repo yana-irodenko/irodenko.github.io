@@ -85,7 +85,6 @@ a {
     z-index: 0;
     background: url("house-illlustration.jpg") center no-repeat;
     background-size: cover;
-    background-size: 100vh;
 }
 
 #logo {
