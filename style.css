@@ -83,13 +83,8 @@ a {
     margin-right: auto;
     max-width: 100%;
     z-index: 0;
-    background-image: url("house-illlustration.jpg");
-    background-position: center;
-    /* Center the image */
-    background-repeat: no-repeat;
-    /* Do not repeat the image */
+    background: url("house-illlustration.jpg") center no-repeat;
     background-size: cover;
-    /* Resize the background image to cover the entire container */
     background-size: 100vh;
 }
 
