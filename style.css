@@ -137,7 +137,7 @@ h2 {
     font-size: 24px;
     color: #e1a44f;
     font-style: medium;
-    margin-top: 3%;
+    margin-top: 1%;
 
     grid-area: h2;
     margin-right: 0%;
@@ -153,14 +153,14 @@ h2 {
 
 .life {
     display: grid;
-    grid-template-columns: 4fr 3fr 1fr;
+    grid-template-columns: 4fr 4fr;
     grid-template-rows: auto;
     grid-template-areas:
-        "h1 h1 h1 "
-        "imgtwo h2 ."
-        "imgtwo  p .";
-    "imgtwo p .";
-    "imgtwo p .";
+        "h1 h1  "
+        "imgtwo h2 "
+        "imgtwo  p ";
+    "imgtwo p ";
+    "imgtwo p ";
     margin-top: 5%;
 }
 
@@ -174,7 +174,8 @@ h2 {
     place-self: center;
     margin-right: 0%;
     margin-top: 0%;
-    margin-left: 20%;
+    margin-left: 26%;
+    padding: 0;
 
 }
 
@@ -191,9 +192,9 @@ p {
 .life p {
     grid-area: p;
     margin-top: 0px;
-    margin-right: 0%;
+    margin-right: 40%;
     margin-left: 0%;
-    padding-top: 0;
+    padding-top: 7%;
     padding-left: 0;
 }
 
@@ -219,24 +220,28 @@ ul,
 ol {
     font-size: 18px;
     color: #e1a44f;
-    padding: 0px 10px 10px 50px;
     border-top-width: 0px;
     margin-top: 0px;
     font-style: normal;
+}
+
+ul {
+    padding: 0px 10px 10px 50px;
 }
 
 h4 {
     margin-top: 0px;
     padding-top: 130px;
     color: #e1a44f;
-    padding-left: 400px;
+    padding-left: 25%;
     grid-area: h4;
 }
 
 ol {
-    padding-bottom: 50px;
-    padding-left: 400px;
-    grid-area: 0l;
+    margin-top: 0px;
+    color: #e1a44f;
+    padding-left: 25%;
+    grid-area: ol;
 }
 
 #works {
@@ -381,38 +386,21 @@ iframe {
 
 
 .gallery-item {
-    position: relative;
-    width: 300px;
-    height: 300px;
+    max-height: 300px;
+    max-width: 300px;
     overflow: hidden;
 }
 
 .gallery-item img {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    max-width: 100%;
-    height: auto;
-    transform: translate(-50%, -50%);
+   max-width: 100%;
+   
+}
+.portfolio-item{
+  object-fit: cover;
+  object-position: 50% 50%;  
+  overflow: hidden;
 }
 
-#fish {
-    position: absolute;
-    left: 50%;
-    top: 60%;
-    max-width: 100%;
-    height: auto;
-    transform: translate(-50%, -50%);
-}
-
-#me {
-    position: absolute;
-    left: 50%;
-    top: 50%;
-    max-height: 100%;
-    width: auto;
-    transform: translate(-50%, -50%);
-}
 
 #works {
     background-color: #152f2f;
@@ -422,12 +410,12 @@ iframe {
     grid-area: gallery;
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    grid-gap: 100px;
+    grid-gap: 10%;
     align-items: center;
     max-width: 100%;
-    margin: auto;
+    margin: 15%;
     margin-top: 3%;
-    margin-bottom: 3%;
+    
 }
 
 
