@@ -83,15 +83,16 @@ a {
     margin-right: auto;
     max-width: 100%;
     z-index: 0;
+}
+
+#logo {
+    background: #0a1517;
     background-image: url("house-illustration.jpg");
     background-position: center center;
     background-repeat: no-repeat;
     background-attachment: fixed;
     background-size: cover;
-}
-
-#logo {
-    background: #0a1517;
+    background-origin: content-box;
 }
 
 #logo p {
